@@ -32,23 +32,24 @@
 					Magic Keyboard - US English</p>
 
 				<h6>Memory</h6>
-				<button id="8gbmemory" class="btn btn-outline-secondary"> 8GB unified memory</button>
-				<button class="btn btn-outline-secondary"> 16GB unified memory</button>
+				<button id="memory8gb" class="btn btn-outline-secondary"> 8GB unified memory</button>
+				<button id="memory16gb" class="btn btn-outline-secondary"> 16GB unified memory</button>
 				<br>
 				<br>
 				<h6>storage</h6>
-				<button class="btn btn-outline-secondary">256GB SSD Storage</button>
-				<button class="btn btn-outline-secondary">512GB SSD Storage</button>
-				<button class="btn btn-outline-secondary">1TBS SSD Storage</button>
+				<button id="Storage256gb" class="btn btn-outline-secondary">256GB SSD Storage</button>
+				<button id="Storage512gb" class="btn btn-outline-secondary">512GB SSD Storage</button>
+				<button id="Storage1tb" class="btn btn-outline-secondary">1TBS SSD Storage</button>
 				<br>
 				<br>
 				<h6>Choose your Delivery Option</h6>
 
 				<div class="row">
-					<button class="btn btn-outline-secondary col-6">Wednesday, Aug 25 Free Prime
+					<button id="free-delivery" class="btn btn-outline-secondary col-6">Wednesday, Aug 25 Free Prime
 						Delivery</button>
 
-					<button class="btn btn-outline-secondary col-6">Saturday, Aug 21 Delivery Charge $20</button>
+					<button id="charge-delivery" class="btn btn-outline-secondary col-6">Saturday, Aug 21 Delivery
+						Charge $20</button>
 				</div>
 
 				<div class="row mt-5">
@@ -68,7 +69,7 @@
 						<hr>
 					</div>
 					<div class="col-6 col-sm-4">
-						<h6>$0</h6>
+						<h6>$<span id="extra-memory">0</span></h6>
 						<hr>
 					</div>
 					<div class="w-100 d-none d-md-block"></div>
@@ -78,7 +79,7 @@
 						<hr>
 					</div>
 					<div class="col-6 col-sm-4">
-						<h6>$0</h6>
+						<h6>$<span id="extra-storage">0</h6>
 						<hr>
 					</div>
 					<div class="w-100 d-none d-md-block"></div>
@@ -87,14 +88,26 @@
 						<h6>Delivery Charge</h6>
 					</div>
 					<div class="col-6 col-sm-4">
-						<h6>$0</h6>
+						<h6>$<span id="delivery-charge">0</h6>
 					</div>
 					<hr id="last-line">
+				</div>
+
+				<div id="row col-sm-4">
+					<div class="col-6 col-sm-4">
+						<h6>Total Price</h6>
+						<hr>
+					</div>
+					<div class="row col-sm-4">
+						<h6>$<span id="end-total">1299</span></h6>
+					</div>
+
 				</div>
 
 				<div>
 					<h6>Add Promo Code</h6>
 				</div>
+
 
 				<div class="input-group">
 					<input type="text" class="form-control">
@@ -108,7 +121,7 @@
 			<h1 class="text-center">Total:$1299</h1>
 	</section>
 
-	<script src="js/imac.js"></script>
+	<script src="js/mac.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
 		crossorigin="anonymous"></script>
